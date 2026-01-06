@@ -60,13 +60,34 @@ obs: 'X', 'Y',
 ```
 Where X and Y are the cell coordinates, the vars are the genes of interest
 
-## Test data
-The test data folder contains contour coordinates, curvature values, and anndata file (cell transcripts and cell position).
-To compute curvature values of the contour coords, use the Compute_curvature_contours file. 
+## Test Data
 
-You the contour coordinates file as input to the command: 
-  curvature = compute_curvature_profile(contour_data, min_contour_length=20, window_size_ratio=20)
+The `test_data` folder contains:
+- Contour coordinate files  
+- Curvature values  
+- An AnnData file with cell transcript counts and spatial coordinates  
 
+## Computing Contour Curvature
+
+To compute curvature from the contour coordinates, use the notebook:
+
+- `Compute_curvature_contours.ipynb`
+
+You can also compute curvature directly from the contour file using:
+
+```python
+curvature = compute_curvature_profile(
+    contour_data,
+    min_contour_length=20,
+    window_size_ratio=20
+)
+Gene–Curvature Correlation
+After computing curvature, use the notebook:
+
+Compute_plot_gene_curvature_correlation.ipynb
+
+This notebook computes and visualizes the correlation between contour curvature
+and the expression of a selected gene in cells located inside the contour.
 
 ## Python Packages
 
