@@ -60,6 +60,12 @@ obs: 'X', 'Y',
 ```
 Where X and Y are the cell coordinates, the vars are the genes of interest
 
+## Test data
+The test data folder contains contour coordinates, curvature values, and anndata file (cell transcripts and cell position).
+To compute curvature values of the contour coords, use the Compute_curvature_contours file. 
+You the contour coordinates file as input to the command: 
+  curvature = compute_curvature_profile(contour_data, min_contour_length=20, window_size_ratio=20)
+
 
 ## Python Packages
 
