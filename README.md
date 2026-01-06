@@ -79,6 +79,7 @@ curvature = compute_curvature_profile(
     min_contour_length=20,
     window_size_ratio=20
 )
+```
 
 After computing curvature, use the notebook:
 
