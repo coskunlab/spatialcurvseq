@@ -83,7 +83,7 @@ curvature = compute_curvature_profile(
 
 After computing curvature, use the notebook:
 
-Compute_plot_gene_curvature_correlation.ipynb
+- `Compute_plot_gene_curvature_correlation.ipynb`
 
 This notebook computes and visualizes the correlation between contour curvature
 and the expression of a selected gene in cells located inside the contour.
