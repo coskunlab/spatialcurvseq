@@ -65,10 +65,8 @@ Where X and Y are the cell coordinates, the vars are the genes of interest
 The `test_data` folder contains:
 - Contour coordinate files  
 - Curvature values  
-- An AnnData file with cell transcript counts and spatial coordinates  
-
-## Computing Contour Curvature
-
+- An AnnData file with cell transcript counts and spatial coordinates
+- 
 To compute curvature from the contour coordinates, use the notebook:
 
 - `Compute_curvature_contours.ipynb`
@@ -81,7 +79,7 @@ curvature = compute_curvature_profile(
     min_contour_length=20,
     window_size_ratio=20
 )
-Gene–Curvature Correlation
+
 After computing curvature, use the notebook:
 
 Compute_plot_gene_curvature_correlation.ipynb
